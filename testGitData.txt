@@ -1,86 +1,86 @@
-	git init                                                  # ³õÊ¼»¯±¾µØgit²Ö¿â£¨´´½¨ĞÂ²Ö¿â£©
-	git config --global user.name "xxx"                       # ÅäÖÃÓÃ»§Ãû
-	git config --global user.email "xxx@xxx.com"              # ÅäÖÃÓÊ¼ş
-	git config --global color.ui true                         # git statusµÈÃüÁî×Ô¶¯×ÅÉ«
+ï»¿	git init                                                  # åˆå§‹åŒ–æœ¬åœ°gitå€‰åº«ï¼ˆå‰µå»ºæ–°å€‰åº«ï¼‰
+	git config --global user.name "xxx"                       # é…ç½®ç”¨æˆ¶å
+	git config --global user.email "xxx@xxx.com"              # é…ç½®éƒµä»¶
+	git config --global color.ui true                         # git statusç­‰å‘½ä»¤è‡ªå‹•è‘—è‰²
 	git config --global color.status auto
 	git config --global color.diff auto
 	git config --global color.branch auto
 	git config --global color.interactive auto
 	git config --global --unset http.proxy                    # remove  proxy configuration on git
-	git clone git+ssh://git@192.168.53.168/VT.git             # cloneÔ¶³Ì²Ö¿â
-	git status                                                # ²é¿´µ±Ç°°æ±¾×´Ì¬£¨ÊÇ·ñĞŞ¸Ä£©
-	git add xyz                                               # Ìí¼ÓxyzÎÄ¼şÖÁindex
-	git add .                                                 # Ôö¼Óµ±Ç°×ÓÄ¿Â¼ÏÂËùÓĞ¸ü¸Ä¹ıµÄÎÄ¼şÖÁindex
-	git commit -m 'xxx'                                       # Ìá½»
-	git commit --amend -m 'xxx'                               # ºÏ²¢ÉÏÒ»´ÎÌá½»£¨ÓÃÓÚ·´¸´ĞŞ¸Ä£©
-	git commit -am 'xxx'                                      # ½«addºÍcommitºÏÎªÒ»²½
-	git rm xxx                                                # É¾³ıindexÖĞµÄÎÄ¼ş
-	git rm -r *                                               # µİ¹éÉ¾³ı
-	git log                                                   # ÏÔÊ¾Ìá½»ÈÕÖ¾
-	git log -1                                                # ÏÔÊ¾1ĞĞÈÕÖ¾ -nÎªnĞĞ
+	git clone git+ssh://git@192.168.53.168/VT.git             # cloneé ç¨‹å€‰åº«
+	git status                                                # æŸ¥çœ‹ç•¶å‰ç‰ˆæœ¬ç‹€æ…‹ï¼ˆæ˜¯å¦ä¿®æ”¹ï¼‰
+	git add xyz                                               # æ·»åŠ xyzæ–‡ä»¶è‡³index
+	git add .                                                 # å¢åŠ ç•¶å‰å­ç›®éŒ„ä¸‹æ‰€æœ‰æ›´æ”¹éçš„æª”è‡³index
+	git commit -m 'xxx'                                       # æäº¤
+	git commit --amend -m 'xxx'                               # åˆä½µä¸Šä¸€æ¬¡æäº¤ï¼ˆç”¨æ–¼åå¾©ä¿®æ”¹ï¼‰
+	git commit -am 'xxx'                                      # å°‡addå’Œcommitåˆç‚ºä¸€æ­¥
+	git rm xxx                                                # åˆªé™¤indexä¸­çš„æª”
+	git rm -r *                                               # éè¿´åˆªé™¤
+	git log                                                   # é¡¯ç¤ºæäº¤æ—¥èªŒ
+	git log -1                                                # é¡¯ç¤º1è¡Œæ—¥èªŒ -nç‚ºnè¡Œ
 	git log -5
-	git log --stat                                            # ÏÔÊ¾Ìá½»ÈÕÖ¾¼°Ïà¹Ø±ä¶¯ÎÄ¼ş
+	git log --stat                                            # é¡¯ç¤ºæäº¤æ—¥èªŒåŠç›¸é—œè®Šå‹•æª”
 	git log -p -m
-	git show dfb02e6e4f2f7b573337763e5c0013802e392818         # ÏÔÊ¾Ä³¸öÌá½»µÄÏêÏ¸ÄÚÈİ
-	git show dfb02                                            # ¿ÉÖ»ÓÃcommitidµÄÇ°¼¸Î»
-	git show HEAD                                             # ÏÔÊ¾HEADÌá½»ÈÕÖ¾
-	git show HEAD^                                            # ÏÔÊ¾HEADµÄ¸¸£¨ÉÏÒ»¸ö°æ±¾£©µÄÌá½»ÈÕÖ¾ ^^ÎªÉÏÁ½¸ö°æ±¾ ^5ÎªÉÏ5¸ö°æ±¾
-	git tag                                                   # ÏÔÊ¾ÒÑ´æÔÚµÄtag
-	git tag -a v2.0 -m 'xxx'                                  # Ôö¼Óv2.0µÄtag
-	git show v2.0                                             # ÏÔÊ¾v2.0µÄÈÕÖ¾¼°ÏêÏ¸ÄÚÈİ
-	git log v2.0                                              # ÏÔÊ¾v2.0µÄÈÕÖ¾
-	git diff                                                  # ÏÔÊ¾ËùÓĞÎ´Ìí¼ÓÖÁindexµÄ±ä¸ü
-	git diff --cached                                         # ÏÔÊ¾ËùÓĞÒÑÌí¼Óindexµ«»¹Î´commitµÄ±ä¸ü
-	git diff HEAD^                                            # ±È½ÏÓëÉÏÒ»¸ö°æ±¾µÄ²îÒì
-	git diff HEAD -- ./lib                                    # ±È½ÏÓëHEAD°æ±¾libÄ¿Â¼µÄ²îÒì
-	git diff origin/master..master                            # ±È½ÏÔ¶³Ì·ÖÖ§masterÉÏÓĞ±¾µØ·ÖÖ§masterÉÏÃ»ÓĞµÄ
-	git diff origin/master..master --stat                     # Ö»ÏÔÊ¾²îÒìµÄÎÄ¼ş£¬²»ÏÔÊ¾¾ßÌåÄÚÈİ
-	git remote add origin git+ssh://git@192.168.53.168/VT.git # Ôö¼ÓÔ¶³Ì¶¨Òå£¨ÓÃÓÚpush/pull/fetch£©
-	git branch                                                # ÏÔÊ¾±¾µØ·ÖÖ§
-	git branch --contains 50089                               # ÏÔÊ¾°üº¬Ìá½»50089µÄ·ÖÖ§
-	git branch -a                                             # ÏÔÊ¾ËùÓĞ·ÖÖ§
-	git branch -r                                             # ÏÔÊ¾ËùÓĞÔ­´´·ÖÖ§
-	git branch --merged                                       # ÏÔÊ¾ËùÓĞÒÑºÏ²¢µ½µ±Ç°·ÖÖ§µÄ·ÖÖ§
-	git branch --no-merged                                    # ÏÔÊ¾ËùÓĞÎ´ºÏ²¢µ½µ±Ç°·ÖÖ§µÄ·ÖÖ§
-	git branch -m master master_copy                          # ±¾µØ·ÖÖ§¸ÄÃû
-	git checkout -b master_copy                               # ´Óµ±Ç°·ÖÖ§´´½¨ĞÂ·ÖÖ§master_copy²¢¼ì³ö
-	git checkout -b master master_copy                        # ÉÏÃæµÄÍêÕû°æ
-	git checkout features/performance                         # ¼ì³öÒÑ´æÔÚµÄfeatures/performance·ÖÖ§
-	git checkout --track hotfixes/BJVEP933                    # ¼ì³öÔ¶³Ì·ÖÖ§hotfixes/BJVEP933²¢´´½¨±¾µØ¸ú×Ù·ÖÖ§
-	git checkout v2.0                                         # ¼ì³ö°æ±¾v2.0
-	git checkout -b devel origin/develop                      # ´ÓÔ¶³Ì·ÖÖ§develop´´½¨ĞÂ±¾µØ·ÖÖ§devel²¢¼ì³ö
-	git checkout -- README                                    # ¼ì³öhead°æ±¾µÄREADMEÎÄ¼ş£¨¿ÉÓÃÓÚĞŞ¸Ä´íÎó»ØÍË£©
-	git merge origin/master                                   # ºÏ²¢Ô¶³Ìmaster·ÖÖ§ÖÁµ±Ç°·ÖÖ§
-	git cherry-pick ff44785404a8e                             # ºÏ²¢Ìá½»ff44785404a8eµÄĞŞ¸Ä
-	git push origin master                                    # ½«µ±Ç°·ÖÖ§pushµ½Ô¶³Ìmaster·ÖÖ§
-	git push origin :hotfixes/BJVEP933                        # É¾³ıÔ¶³Ì²Ö¿âµÄhotfixes/BJVEP933·ÖÖ§
-	git push --tags                                           # °ÑËùÓĞtagÍÆËÍµ½Ô¶³Ì²Ö¿â
-	git fetch                                                 # »ñÈ¡ËùÓĞÔ¶³Ì·ÖÖ§£¨²»¸üĞÂ±¾µØ·ÖÖ§£¬ÁíĞèmerge£©
-	git fetch --prune                                         # »ñÈ¡ËùÓĞÔ­´´·ÖÖ§²¢Çå³ı·şÎñÆ÷ÉÏÒÑÉ¾µôµÄ·ÖÖ§
-	git pull origin master                                    # »ñÈ¡Ô¶³Ì·ÖÖ§master²¢mergeµ½µ±Ç°·ÖÖ§
-	git mv README README2                                     # ÖØÃüÃûÎÄ¼şREADMEÎªREADME2
-	git reset --hard HEAD                                     # ½«µ±Ç°°æ±¾ÖØÖÃÎªHEAD£¨Í¨³£ÓÃÓÚmergeÊ§°Ü»ØÍË£©
+	git show dfb02e6e4f2f7b573337763e5c0013802e392818         # é¡¯ç¤ºæŸå€‹æäº¤çš„è©³ç´°å…§å®¹
+	git show dfb02                                            # å¯åªç”¨commitidçš„å‰å¹¾ä½
+	git show HEAD                                             # é¡¯ç¤ºHEADæäº¤æ—¥èªŒ
+	git show HEAD^                                            # é¡¯ç¤ºHEADçš„çˆ¶ï¼ˆä¸Šä¸€å€‹ç‰ˆæœ¬ï¼‰çš„æäº¤æ—¥èªŒ ^^ç‚ºä¸Šå…©å€‹ç‰ˆæœ¬ ^5ç‚ºä¸Š5å€‹ç‰ˆæœ¬
+	git tag                                                   # é¡¯ç¤ºå·²å­˜åœ¨çš„tag
+	git tag -a v2.0 -m 'xxx'                                  # å¢åŠ v2.0çš„tag
+	git show v2.0                                             # é¡¯ç¤ºv2.0çš„æ—¥èªŒåŠè©³ç´°å…§å®¹
+	git log v2.0                                              # é¡¯ç¤ºv2.0çš„æ—¥èªŒ
+	git diff                                                  # é¡¯ç¤ºæ‰€æœ‰æœªæ·»åŠ è‡³indexçš„è®Šæ›´
+	git diff --cached                                         # é¡¯ç¤ºæ‰€æœ‰å·²æ·»åŠ indexä½†é‚„æœªcommitçš„è®Šæ›´
+	git diff HEAD^                                            # æ¯”è¼ƒèˆ‡ä¸Šä¸€å€‹ç‰ˆæœ¬çš„å·®ç•°
+	git diff HEAD -- ./lib                                    # æ¯”è¼ƒèˆ‡HEADç‰ˆæœ¬libç›®éŒ„çš„å·®ç•°
+	git diff origin/master..master                            # æ¯”è¼ƒé ç«¯åˆ†æ”¯masterä¸Šæœ‰æœ¬åœ°åˆ†æ”¯masterä¸Šæ²’æœ‰çš„
+	git diff origin/master..master --stat                     # åªé¡¯ç¤ºå·®ç•°çš„æª”ï¼Œä¸é¡¯ç¤ºå…·é«”å…§å®¹
+	git remote add origin git+ssh://git@192.168.53.168/VT.git # å¢åŠ é ç¨‹å®šç¾©ï¼ˆç”¨æ–¼push/pull/fetchï¼‰
+	git branch                                                # é¡¯ç¤ºæœ¬åœ°åˆ†æ”¯
+	git branch --contains 50089                               # é¡¯ç¤ºåŒ…å«æäº¤50089çš„åˆ†æ”¯
+	git branch -a                                             # é¡¯ç¤ºæ‰€æœ‰åˆ†æ”¯
+	git branch -r                                             # é¡¯ç¤ºæ‰€æœ‰åŸå‰µåˆ†æ”¯
+	git branch --merged                                       # é¡¯ç¤ºæ‰€æœ‰å·²åˆä½µåˆ°ç•¶å‰åˆ†æ”¯çš„åˆ†æ”¯
+	git branch --no-merged                                    # é¡¯ç¤ºæ‰€æœ‰æœªåˆä½µåˆ°ç•¶å‰åˆ†æ”¯çš„åˆ†æ”¯
+	git branch -m master master_copy                          # æœ¬åœ°åˆ†æ”¯æ”¹å
+	git checkout -b master_copy                               # å¾ç•¶å‰åˆ†æ”¯å‰µå»ºæ–°åˆ†æ”¯master_copyä¸¦æª¢å‡º
+	git checkout -b master master_copy                        # ä¸Šé¢çš„å®Œæ•´ç‰ˆ
+	git checkout features/performance                         # æª¢å‡ºå·²å­˜åœ¨çš„features/performanceåˆ†æ”¯
+	git checkout --track hotfixes/BJVEP933                    # æª¢å‡ºé ç«¯åˆ†æ”¯hotfixes/BJVEP933ä¸¦å‰µå»ºæœ¬åœ°è·Ÿè¹¤åˆ†æ”¯
+	git checkout v2.0                                         # æª¢å‡ºç‰ˆæœ¬v2.0
+	git checkout -b devel origin/develop                      # å¾é ç«¯åˆ†æ”¯developå‰µå»ºæ–°æœ¬åœ°åˆ†æ”¯develä¸¦æª¢å‡º
+	git checkout -- README                                    # æª¢å‡ºheadç‰ˆæœ¬çš„READMEæª”ï¼ˆå¯ç”¨æ–¼ä¿®æ”¹éŒ¯èª¤å›é€€ï¼‰
+	git merge origin/master                                   # åˆä½µé ç«¯masteråˆ†æ”¯è‡³ç•¶å‰åˆ†æ”¯
+	git cherry-pick ff44785404a8e                             # åˆä½µæäº¤ff44785404a8eçš„ä¿®æ”¹
+	git push origin master                                    # å°‡ç•¶å‰åˆ†æ”¯pushåˆ°é ç«¯masteråˆ†æ”¯
+	git push origin :hotfixes/BJVEP933                        # åˆªé™¤é ç«¯å€‰åº«çš„hotfixes/BJVEP933åˆ†æ”¯
+	git push --tags                                           # æŠŠæ‰€æœ‰tagæ¨é€åˆ°é ç«¯å€‰åº«
+	git fetch                                                 # ç²å–æ‰€æœ‰é ç«¯åˆ†æ”¯ï¼ˆä¸æ›´æ–°æœ¬åœ°åˆ†æ”¯ï¼Œå¦éœ€mergeï¼‰
+	git fetch --prune                                         # ç²å–æ‰€æœ‰åŸå‰µåˆ†æ”¯ä¸¦æ¸…é™¤ä¼ºæœå™¨ä¸Šå·²åˆªæ‰çš„åˆ†æ”¯
+	git pull origin master                                    # ç²å–é ç«¯åˆ†æ”¯masterä¸¦mergeåˆ°ç•¶å‰åˆ†æ”¯
+	git mv README README2                                     # é‡å‘½åæª”READMEç‚ºREADME2
+	git reset --hard HEAD                                     # å°‡ç•¶å‰ç‰ˆæœ¬é‡ç½®ç‚ºHEADï¼ˆé€šå¸¸ç”¨æ–¼mergeå¤±æ•—å›é€€ï¼‰
 	git rebase
-	git branch -d hotfixes/BJVEP933                           # É¾³ı·ÖÖ§hotfixes/BJVEP933£¨±¾·ÖÖ§ĞŞ¸ÄÒÑºÏ²¢µ½ÆäËû·ÖÖ§£©
-	git branch -D hotfixes/BJVEP933                           # Ç¿ÖÆÉ¾³ı·ÖÖ§hotfixes/BJVEP933
-	git ls-files                                              # ÁĞ³ögit index°üº¬µÄÎÄ¼ş
-	git show-branch                                           # Í¼Ê¾µ±Ç°·ÖÖ§ÀúÊ·
-	git show-branch --all                                     # Í¼Ê¾ËùÓĞ·ÖÖ§ÀúÊ·
-	git whatchanged                                           # ÏÔÊ¾Ìá½»ÀúÊ·¶ÔÓ¦µÄÎÄ¼şĞŞ¸Ä
-	git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # ³·ÏúÌá½»dfb02e6e4f2f7b573337763e5c0013802e392818
-	git ls-tree HEAD                                          # ÄÚ²¿ÃüÁî£ºÏÔÊ¾Ä³¸ögit¶ÔÏó
-	git rev-parse v2.0                                        # ÄÚ²¿ÃüÁî£ºÏÔÊ¾Ä³¸öref¶ÔÓÚµÄSHA1 HASH
-	git reflog                                                # ÏÔÊ¾ËùÓĞÌá½»£¬°üÀ¨¹ÂÁ¢½Úµã
+	git branch -d hotfixes/BJVEP933                           # åˆªé™¤åˆ†æ”¯hotfixes/BJVEP933ï¼ˆæœ¬åˆ†æ”¯ä¿®æ”¹å·²åˆä½µåˆ°å…¶ä»–åˆ†æ”¯ï¼‰
+	git branch -D hotfixes/BJVEP933                           # å¼·åˆ¶åˆªé™¤åˆ†æ”¯hotfixes/BJVEP933
+	git ls-files                                              # åˆ—å‡ºgit indexåŒ…å«çš„æª”
+	git show-branch                                           # åœ–ç¤ºç•¶å‰åˆ†æ”¯æ­·å²
+	git show-branch --all                                     # åœ–ç¤ºæ‰€æœ‰åˆ†æ”¯æ­·å²
+	git whatchanged                                           # é¡¯ç¤ºæäº¤æ­·å²å°æ‡‰çš„æª”ä¿®æ”¹
+	git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # æ’¤éŠ·æäº¤dfb02e6e4f2f7b573337763e5c0013802e392818
+	git ls-tree HEAD                                          # å…§éƒ¨å‘½ä»¤ï¼šé¡¯ç¤ºæŸå€‹gitç‰©ä»¶
+	git rev-parse v2.0                                        # å…§éƒ¨å‘½ä»¤ï¼šé¡¯ç¤ºæŸå€‹refå°æ–¼çš„SHA1 HASH
+	git reflog                                                # é¡¯ç¤ºæ‰€æœ‰æäº¤ï¼ŒåŒ…æ‹¬å­¤ç«‹ç¯€é»
 	git show HEAD@{5}
-	git show master@{yesterday}                               # ÏÔÊ¾master·ÖÖ§×òÌìµÄ×´Ì¬
-	git log --pretty=format:'%h %s' --graph                   # Í¼Ê¾Ìá½»ÈÕÖ¾
+	git show master@{yesterday}                               # é¡¯ç¤ºmasteråˆ†æ”¯æ˜¨å¤©çš„ç‹€æ…‹
+	git log --pretty=format:'%h %s' --graph                   # åœ–ç¤ºæäº¤æ—¥èªŒ
 	git show HEAD~3
 	git show -s --pretty=raw 2be7fcb476
-	git stash                                                 # Ôİ´æµ±Ç°ĞŞ¸Ä£¬½«ËùÓĞÖÁÎªHEAD×´Ì¬
-	git stash list                                            # ²é¿´ËùÓĞÔİ´æ
-	git stash show -p stash@{0}                               # ²Î¿¼µÚÒ»´ÎÔİ´æ
-	git stash apply stash@{0}                                 # Ó¦ÓÃµÚÒ»´ÎÔİ´æ
-	git grep "delete from"                                    # ÎÄ¼şÖĞËÑË÷ÎÄ±¾¡°delete from¡±
+	git stash                                                 # æš«å­˜ç•¶å‰ä¿®æ”¹ï¼Œå°‡æ‰€æœ‰è‡³ç‚ºHEADç‹€æ…‹
+	git stash list                                            # æŸ¥çœ‹æ‰€æœ‰æš«å­˜
+	git stash show -p stash@{0}                               # åƒè€ƒç¬¬ä¸€æ¬¡æš«å­˜
+	git stash apply stash@{0}                                 # æ‡‰ç”¨ç¬¬ä¸€æ¬¡æš«å­˜
+	git grep "delete from"                                    # æª”ä¸­æœç´¢æ–‡æœ¬â€œdelete fromâ€
 	git grep -e '#define' --and -e SORT_DIRENT
 	git gc
 	git fsck
