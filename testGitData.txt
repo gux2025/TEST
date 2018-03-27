@@ -80,7 +80,7 @@
 	git stash list                                            # 查看所有暫存
 	git stash show -p stash@{0}                               # 參考第一次暫存
 	git stash apply stash@{0}                                 # 應用第一次暫存
-	git grep "delete from"                                    # 檔中搜索文本“delete from”
+	git grep "delete from"                                    # 檔中搜索文本“delete from
 	git grep -e '#define' --and -e SORT_DIRENT
 	git gc
 	git fsck
