@@ -1,4 +1,4 @@
-﻿	git init                                                  ※ 初始化本地git倉庫（創建新倉庫）
+﻿	git init                                                  ※ 初始化本地git倉庫（創建新倉庫）Merge Master
 	git config --global user.name "xxx"                       ※ 配置用戶名
 	git config --global user.email "xxx@xxx.com"              ※ 配置郵件
 	git config --global color.ui true                         ※ git status等命令自動著色XX
