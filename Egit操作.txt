@@ -1,9 +1,0 @@
-Egit操作
-
-assume-unchanged -- 忽略此檔案的變更，例如:jetty設定
-no-assume-unchanged
-
-Replace With -> HEAD Revision -- revert回復檔案的變更
-
-
-
