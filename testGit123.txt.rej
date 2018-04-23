@@ -1,0 +1,8 @@
+diff a/testGit123.txt b/testGit123.txt	(rejected hunks)
+@@ -1,5 +1,6 @@
+ -XXXX 666666+677777777
+ +<<<<<<< HEAD
+++XXXX
+ +=======
+ +XXXX 666666+677777777
+ +>>>>>>> 7112031... commit 2
